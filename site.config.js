@@ -1,44 +1,32 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "doyoon song",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "backend & data engineer",
-    bio: "Student Developer",
-    email: "sd990307@gm.gist.ac.kr",
+    name: "URM",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "MEME",
+    bio: "옛날영상과 출처 그리고 이것저것",
+    email: "joeykim383@gmail.com",
     linkedin: "",
-    github: "SongDerrick",
-    instagram: "doyo_onee",
+    github: "",
+    instagram: "urm4meme",
   },
   projects: [
     {
-      name: `Web crawler and Automation Program`,
-      href: "https://doyoonsong.vercel.app/pythoncrawler",
+      name: `youtube`,
+      href: "https://youtube.com/@URM_MEME",
     },
-    {
-      name: `Data Collecting Platform for ARC Problems`,
-      href: "https://doyoonsong.vercel.app/ARC_project",
-    },
-    {
-      name: `Android Application with three tab structures`,
-      href: "https://github.com/SongDerrick/molcamp_week_1",
-    }
   ],
   // blog setting (required)
   blog: {
-    title: "Doyoon Song",
-    description: "welcome to doyoon's blog!",
-    theme: "auto", // ['light', 'dark', 'auto']
+    title: "URM의 방주",
+    description: "Good to see you!",
   },
 
   // CONFIG configration (required)
-  link: "https://doyoonlog.vercel.app/",
-  since: 2023, // If leave this empty, current year will be used.
+  link: "",
+  since: 2019, // If leave this empty, current year will be used.
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
-  seo: {
-    keywords: ["Doyoon", "Website", "Notion", "Developer", "GIST", "Data Engineering", "Problem Solving", "Baekjoon", "백준", "머신러닝", "딥러닝", "Machine Learning", "Deep Learning"],
-  },
 
   // notion configuration (required)
   notionConfig: {
@@ -47,21 +35,21 @@ const CONFIG = {
 
   // plugin configuration (optional)
   googleAnalytics: {
-    enable: true,
+    enable: false,
     config: {
-      measurementId: process.env.GOOGLE_MEASUREMENT_ID || "",
+      measurementId: process.env.NEXT_PUBLIC_GOOGLE_MEASUREMENT_ID || "",
     },
   },
   googleSearchConsole: {
-    enable: true,
+    enable: false,
     config: {
-      siteVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
+      siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
   utterances: {
     enable: true,
     config: {
-      repo: "SongDerrick/doyoonlog",
+      repo: "remmikim/MTBLOG",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
@@ -74,5 +62,7 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
-module.exports = CONFIG
+
+module.exports = { CONFIG }
