@@ -50,7 +50,7 @@ const ContactCard: React.FC = () => {
         )}
         {CONFIG.profile.discord && (
           <a
-            href={`https://discord.gg/YNuMxNzzRh${CONFIG.profile.Discord}`}
+            href={`https://discord.gg/${CONFIG.profile.discord}`}
             rel="noreferrer"
             target="_blank"
             className="  overflow-hidden p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white"
