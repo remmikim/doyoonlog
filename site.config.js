@@ -12,8 +12,8 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `morethanmin`,
-      href: "https://github.com/morethanmin",
+      name: `morethanmin & SongDerrick`,
+      href: "https://github.com/morethanmin/morethan-log",
     },
     {
       name: `SongDerrick`,
