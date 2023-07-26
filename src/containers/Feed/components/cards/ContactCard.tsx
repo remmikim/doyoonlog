@@ -2,9 +2,9 @@ import CONFIG from "site.config"
 import React from "react"
 import {
   AiOutlineInstagram,
-  AiOutlineGithub,
+  AiOutlineYoutube,
   AiOutlineMail,
-  AiFillLinkedin,
+  AiFillDiscord,
 } from "react-icons/ai"
 
 const ContactCard: React.FC = () => {
