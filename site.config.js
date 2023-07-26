@@ -6,8 +6,8 @@ const CONFIG = {
     role: "MEME",
     bio: "옛날영상과 출처 그리고 이것저것",
     email: "joeykim383@gmail.com",
-    linkedin: "",
-    github: "",
+    Discord: "",
+    Youtube: "@URM4MEME",
     instagram: "urm4_meme",
   },
   projects: [
