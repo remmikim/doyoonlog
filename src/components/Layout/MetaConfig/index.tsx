@@ -1,4 +1,4 @@
-import { CONFIG } from "site.config"
+import CONFIG from "site.config"
 import Head from "next/head"
 
 export type MetaConfigProps = {
@@ -10,32 +10,40 @@ export type MetaConfigProps = {
   url: string
 }
 
-const MetaConfig: React.FC<MetaConfigProps> = (props) => {
+const MetaConfig: React.FC<MetaConfigProps> = ({ ...props }) => {
+  const meta = {
+    ...props,
+  }
+
   return (
     <Head>
-      <title>{props.title}</title>
+      <title>{meta.title}</title>
       <meta name="robots" content="follow, index" />
       <meta charSet="UTF-8" />
-      <meta name="description" content={props.description} />
+      {CONFIG.seo.keywords && (
+        <meta name="keywords" content={CONFIG.seo.keywords.join(", ")} />
+      )}
+      <meta name="description" content={meta.description} />
       {/* og */}
-      <meta property="og:type" content={props.type} />
-      <meta property="og:title" content={props.title} />
-      <meta property="og:description" content={props.description} />
-      <meta property="og:url" content={props.url} />
+      <meta property="og:type" content={meta.type} />
+      <meta property="og:title" content={meta.title} />
+      <meta property="og:description" content={meta.description} />
+      <meta property="og:url" content={meta.url} />
       {CONFIG.lang && <meta property="og:locale" content={CONFIG.lang} />}
-      {props.image && <meta property="og:image" content={props.image} />}
+      {meta.image && <meta property="og:image" content={meta.image} />}
       {/* twitter */}
-      <meta name="twitter:title" content={props.title} />
-      <meta name="twitter:description" content={props.description} />
+      <meta name="twitter:title" content={meta.title} />
+      <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:card" content="summary_large_image" />
-      {props.image && <meta name="twitter:image" content={props.image} />}
+      {meta.image && <meta name="twitter:image" content={meta.image} />}
       {/* post */}
-      {props.type === "Post" && (
+      {meta.type === "Post" && (
         <>
-          <meta property="article:published_time" content={props.date} />
+          <meta property="article:published_time" content={meta.date} />
           <meta property="article:author" content={CONFIG.profile.name} />
         </>
       )}
+      <meta name="naver-site-verification" content="" />
     </Head>
   )
 }
