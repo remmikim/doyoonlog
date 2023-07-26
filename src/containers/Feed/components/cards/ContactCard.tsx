@@ -4,7 +4,7 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
   AiOutlineMail,
-  AiFillBsDiscord,
+  AiOutlineBsDiscord,
 } from "react-icons/ai"
 
 const ContactCard: React.FC = () => {
