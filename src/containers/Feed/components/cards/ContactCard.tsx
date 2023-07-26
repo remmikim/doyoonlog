@@ -23,7 +23,7 @@ const ContactCard: React.FC = () => {
             className="p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white "
           >
             <AiOutlineYoutube className="text-2xl" />
-            <div className="text-sm">github</div>
+            <div className="text-sm">youtube</div>
           </a>
         )}
         {CONFIG.profile.instagram && (
@@ -56,7 +56,7 @@ const ContactCard: React.FC = () => {
             className="  overflow-hidden p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white"
           >
             <BsDiscord className="text-2xl flex-shrink-0" />
-            <div className="text-sm">linkedin</div>
+            <div className="text-sm">discord</div>
           </a>
         )}
       </ul>
