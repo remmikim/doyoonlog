@@ -1,5 +1,5 @@
 import { cusdis, link } from "site.config"
-import { ReactCusdis } from "cusdis"
+import { ReactCusdis } from "react-cusdis"
 import { useCallback, useEffect, useState } from "react"
 
 type Props = {
