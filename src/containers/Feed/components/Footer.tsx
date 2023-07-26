@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = ({ className }) => {
   return (
     <div className={className}>
       <a
-        href={`https://github.com/${CONFIG.profile.github}`}
+        href={`https://www.youtube.com/${CONFIG.profile.youtube}`}
         target="_blank"
         className="text-gray-500 text-sm mt-3"
         rel="noreferrer"
