@@ -49,7 +49,7 @@ const CONFIG = {
   utterances: {
     enable: true,
     config: {
-      repo: "remmikim/MTBLOG",
+      repo: "remmikim/doyoonlog",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
