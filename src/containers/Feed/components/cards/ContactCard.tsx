@@ -4,8 +4,11 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
   AiOutlineMail,
-  BsDiscord,
 } from "react-icons/ai"
+
+import {
+  BsDiscord
+} from "react-icons/bs";
 
 const ContactCard: React.FC = () => {
   return (
