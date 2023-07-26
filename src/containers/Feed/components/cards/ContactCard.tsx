@@ -4,7 +4,7 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
   AiOutlineMail,
-  AiOutlineBsDiscord,
+  BsDiscord,
 } from "react-icons/ai"
 
 const ContactCard: React.FC = () => {
@@ -52,7 +52,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
             className="  overflow-hidden p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white"
           >
-            <AiOutlineBsDiscord className="text-2xl flex-shrink-0" />
+            <BsDiscord className="text-2xl flex-shrink-0" />
             <div className="text-sm">linkedin</div>
           </a>
         )}
