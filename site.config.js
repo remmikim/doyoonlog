@@ -54,13 +54,6 @@ const CONFIG = {
       label: "💬 Utterances",
     },
   },
-    cusdis: {
-    enable: false,
-    config: {
-      host: "https://cusdis.com",
-      appid: "d8394c64-d0f6-4e30-97ee-30c763eb0e66", // Embed Code -> data-app-id value
-    },
-  },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
