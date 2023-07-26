@@ -4,7 +4,7 @@ const CONFIG = {
     name: "URM",
     image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "MEME",
-    bio: "옛날영상과 출처 그리고 이것저것",
+    bio: "옛날 영상과 출처 그리고 이것저것",
     email: "joeykim383@gmail.com",
     discord: "",
     youtube: "@URM_MEME",
