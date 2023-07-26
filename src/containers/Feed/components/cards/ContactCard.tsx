@@ -12,7 +12,7 @@ const ContactCard: React.FC = () => {
     <>
       <div className="p-1 mb-3 dark:text-white">💬 Contact</div>
       <ul className="rounded-2xl bg-white dark:bg-zinc-700 p-1 flex flex-col">
-        {CONFIG.profile.github && (
+        {CONFIG.profile.youtube && (
           <a
             href={`https://www.youtube.com/${CONFIG.profile.youtube}`}
             rel="noreferrer"
@@ -45,7 +45,7 @@ const ContactCard: React.FC = () => {
             <div className="text-sm">email</div>
           </a>
         )}
-        {CONFIG.profile.linkedin && (
+        {CONFIG.profile.discord && (
           <a
             href={`https://discord.gg/YNuMxNzzRh${CONFIG.profile.Discord}`}
             rel="noreferrer"
