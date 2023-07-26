@@ -12,12 +12,12 @@ const CONFIG = {
   },
   projects: [
     {
-      name: `Web crawler and Automation Program`,
-      href: "https://doyoonsong.vercel.app/pythoncrawler",
+      name: `morethanmin`,
+      href: "https://github.com/morethanmin",
     },
     {
-      name: `Data Collecting Platform for ARC Problems`,
-      href: "https://doyoonsong.vercel.app/ARC_project",
+      name: `SongDerrick`,
+      href: "https://github.com/SongDerrick",
     },
   ],
   // blog setting (required)
