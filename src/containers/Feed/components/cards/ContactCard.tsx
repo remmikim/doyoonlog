@@ -14,12 +14,12 @@ const ContactCard: React.FC = () => {
       <ul className="rounded-2xl bg-white dark:bg-zinc-700 p-1 flex flex-col">
         {CONFIG.profile.github && (
           <a
-            href={`https://github.com/${CONFIG.profile.github}`}
+            href={`https://www.youtube.com/${CONFIG.profile.youtube}`}
             rel="noreferrer"
             target="_blank"
             className="p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white "
           >
-            <AiOutlineGithub className="text-2xl" />
+            <AiOutlineYoutube className="text-2xl" />
             <div className="text-sm">github</div>
           </a>
         )}
@@ -47,12 +47,12 @@ const ContactCard: React.FC = () => {
         )}
         {CONFIG.profile.linkedin && (
           <a
-            href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+            href={`https://discord.gg/YNuMxNzzRh${CONFIG.profile.Discord}`}
             rel="noreferrer"
             target="_blank"
             className="  overflow-hidden p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white"
           >
-            <AiFillLinkedin className="text-2xl flex-shrink-0" />
+            <AiFillDiscord className="text-2xl flex-shrink-0" />
             <div className="text-sm">linkedin</div>
           </a>
         )}
