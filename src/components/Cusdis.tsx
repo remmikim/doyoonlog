@@ -37,7 +37,7 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
 
   const cusdisStyles = `
     .cusdis-thread {
-      background-color: ${isDarkMode ? "#333333" : "#f0f0f0"};
+      background-color: ${isDarkMode ? "#3F4045" : "#FFFFFF"};
       /* Add other custom styles for dark mode here */
     }
   `;
