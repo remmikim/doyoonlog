@@ -4,7 +4,7 @@ import {
   AiOutlineInstagram,
   AiOutlineYoutube,
   AiOutlineMail,
-} from "react-icons/ai"
+} from "react-icons/ai";
 
 import {
   LiaDiscord,
