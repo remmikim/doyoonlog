@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai"
 
 import {
-  LiaDiscord 
+  LiaDiscord,
 } from "react-icons/lia";
 
 const ContactCard: React.FC = () => {
