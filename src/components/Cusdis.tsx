@@ -44,8 +44,8 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
             pageId: id,
             pageTitle: title,
             pageUrl: `${link}/${slug}`,
-            theme: document.documentElement.classList.contains("dark")
-              ? "dark"
+            theme: document.documentElement.classList.contains("gray")
+              ? "gray"
               : "light",
           }}
         />
