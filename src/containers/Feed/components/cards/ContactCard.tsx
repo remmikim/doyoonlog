@@ -7,8 +7,8 @@ import {
 } from "react-icons/ai"
 
 import {
-  BsDiscord
-} from "react-icons/bs";
+  LiaDiscord 
+} from "react-icons/lia";
 
 const ContactCard: React.FC = () => {
   return (
@@ -55,7 +55,7 @@ const ContactCard: React.FC = () => {
             target="_blank"
             className="  overflow-hidden p-3 hover:bg-gray-100 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer flex items-center gap-3 text-gray-500 dark:text-white hover:text-black dark:hover:text-white"
           >
-            <BsDiscord className="text-2xl flex-shrink-0" />
+            <LiaDiscord className="text-2xl flex-shrink-0" />
             <div className="text-sm">discord</div>
           </a>
         )}
