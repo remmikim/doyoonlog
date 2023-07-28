@@ -1,9 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import CONFIG from "site.config"
-
 type Props = {}
-
 const Logo: React.FC<Props> = () => {
   return (
     <Link href="/">
@@ -17,5 +15,4 @@ const Logo: React.FC<Props> = () => {
     </Link>
   )
 }
-
 export default Logo
