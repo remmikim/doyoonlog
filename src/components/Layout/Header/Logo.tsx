@@ -9,7 +9,7 @@ const Logo: React.FC<Props> = () => {
     <Link href="/">
       <a aria-label={CONFIG.blog.title}>
         <div className="flex items-center">
-          <div className="ml-2 text-black dark:text-white header-name font-Yeongdeok Snow Crab text-4xl">
+          <div className="ml-2 text-black dark:text-white header-name font-yeongdeok_snow_crab text-4xl">
             {CONFIG.blog.title}
           </div>
         </div>
