@@ -1,56 +1,37 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { cusdis, link } from "site.config";
-import { ReactCusdis } from "react-cusdis";
+import { cusdis, link } from "site.config"
+import { ReactCusdis } from "react-cusdis"
+import { useCallback, useEffect, useState } from "react"
 
 type Props = {
-  id: string;
-  slug: string;
-  title: string;
-};
+  id: string
+  slug: string
+  title: string
+}
 
 const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0)
 
   const onDocumentElementChange = useCallback(() => {
-    setValue((value) => value + 1);
-  }, []);
+    setValue((value) => value + 1)
+  }, [])
 
   useEffect(() => {
-    const changesObserver = new MutationObserver((mutations: MutationRecord[]) => {
-      mutations.forEach((mutation: MutationRecord) => {
-        onDocumentElementChange();
-      });
-    });
+    const changesObserver = new MutationObserver(
+      (mutations: MutationRecord[]) => {
+        mutations.forEach((mutation: MutationRecord) => {
+          onDocumentElementChange()
+        })
+      }
+    )
 
     changesObserver.observe(document.documentElement, {
       attributeFilter: ["class"],
-    });
+    })
 
     return () => {
-      changesObserver.disconnect();
-    };
-  }, [onDocumentElementChange]);
-
-  const isDarkMode = document.documentElement.classList.contains("dark");
-
-  const cusdisTheme = isDarkMode ? "dark" : "light";
-
-  const cusdisStyles = `
-    .cusdis-thread {
-      background-color: ${isDarkMode ? "#3F4045" : "#FFFFFF"};
-      /* Add other custom styles for dark mode here */
+      changesObserver.disconnect()
     }
-  `;
-
-  useEffect(() => {
-    const styleTag = document.createElement("style");
-    styleTag.innerText = cusdisStyles;
-    document.head.appendChild(styleTag);
-
-    return () => {
-      document.head.removeChild(styleTag);
-    };
-  }, [cusdisStyles]);
+  }, [onDocumentElementChange])
 
   return (
     <>
@@ -63,12 +44,14 @@ const Cusdis: React.FC<Props> = ({ id, slug, title }) => {
             pageId: id,
             pageTitle: title,
             pageUrl: `${link}/${slug}`,
-            theme: cusdisTheme,
+            theme: document.documentElement.classList.contains("dark")
+              ? "dark"
+              : "light",
           }}
         />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Cusdis;
+export default Cusdis
