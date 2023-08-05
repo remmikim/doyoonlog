@@ -3,11 +3,7 @@ import { useState } from 'react';
 const Toc = () => {
   const [currentId, setCurrentId] = useState<string>('');
   const [headingEls, setHeadingEls] = useState<Element[]>([]);
-  return ...
-}
-
-export default Toc.
-useEffect(() => {
+  return useEffect(() => {
     const observer = getIntersectionObserver(setCurrentId);
     const headingElements = Array.from(document.querySelectorAll('h2, h3'));
 
@@ -17,3 +13,6 @@ useEffect(() => {
       observer.observe(header);
     });
   }, []);
+}
+
+export default Toc.
