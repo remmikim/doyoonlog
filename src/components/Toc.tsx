@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getIntersectionObserver } from '../lib/observer.ts';
+import { getIntersectionObserver } from '../lib/observer';
 
 const Toc = () => {
   const [currentId, setCurrentId] = useState<string>('');
