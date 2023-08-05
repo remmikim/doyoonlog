@@ -44,6 +44,7 @@ const MetaConfig: React.FC<MetaConfigProps> = ({ ...props }) => {
         </>
       )}
       <meta name="naver-site-verification" content="" />
+      <meta name="google-site-verification" content="5XNmacOhzNk9brOPRxJqJqYka3HpocruY2VmnHrfDOI" />
     </Head>
   )
 }
