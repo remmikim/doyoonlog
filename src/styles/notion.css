@@ -98,3 +98,9 @@ pre[class*="language-"] {
 .notion-hr {
   border-top: 1px solid rgba(55, 53, 47, 0.16);
 }
+
+.toc {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
