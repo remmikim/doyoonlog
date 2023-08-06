@@ -20,11 +20,21 @@ const Toc = () => {
     };
   }, []);
 
-  // 여기서 실제 목차를 렌더링하는 JSX를 작성하세요.
-
   return (
-    <div>
-      {/* 목차 렌더링 JSX */}
+    <div className="toc">
+      <h2>Table of Contents</h2>
+      <ul>
+        {headingEls.map((header) => (
+          <li key={header.id}>
+            <a
+              href={`#${header.id}`}
+              className={currentId === header.id ? 'active' : ''}
+            >
+              {header.textContent}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
