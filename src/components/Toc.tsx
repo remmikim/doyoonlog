@@ -7,7 +7,7 @@ const Toc = () => {
 
   useEffect(() => {
     const observer = getIntersectionObserver(setCurrentId);
-    const headingElements = Array.from(document.querySelectorAll('h2, h3'));
+    const headingElements = Array.from(document.querySelectorAll('h1, h2, h3'));
 
     setHeadingEls(headingElements);
 
