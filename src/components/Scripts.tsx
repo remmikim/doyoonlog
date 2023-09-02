@@ -21,7 +21,7 @@ const Scripts: React.FC = () => (
     <Script
       src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5580310153725477"
       async
-      crossorigin="anonymous"
+      cross0rigin="anonymous"
     />
   </>
 )
