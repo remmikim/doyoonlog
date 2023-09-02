@@ -9,6 +9,7 @@ import Scripts from '@components/Scripts'
 import { NextPage } from 'next'
 import { ReactElement, ReactNode } from 'react'
 import { AppProps } from 'next/app'
+import Scripts from 'next/script'
 
 export type NextPageWithLayout<PageProps = {}> = NextPage<PageProps> & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <>
-      <Scripts />
+      <Scripts
+        async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5580310153725477"
+     crossorigin="anonymous"></script>/>
       {getLayout(<Component {...pageProps} />)}
     </>
   )
