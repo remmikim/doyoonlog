@@ -7,7 +7,7 @@ const CONFIG = {
     bio: "",
     email: "joeykim383@gmail.com",
     youtube: "@URM_MEME",
-    discord: "YNuMxNzzRh",
+    discord: "mim-keomyuniti-848069341277585419",
     instagram: "urm4_meme",
   },
   projects: [
