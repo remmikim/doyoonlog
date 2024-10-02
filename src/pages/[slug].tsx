@@ -29,12 +29,12 @@ export async function getStaticProps({ params: { slug } }: any) {
 
     return {
       props: { post, blockMap },
-      revalidate: 1,
+      revalidate: 30,
     }
   } catch (error) {
     return {
       props: {},
-      revalidate: 1,
+      revalidate: 30,
     }
   }
 }
