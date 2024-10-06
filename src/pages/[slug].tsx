@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { slug } }: any) {
 
     return {
       props: { post, blockMap },
-      revalidate: 30,
+      revalidate: 3600,
     }
   } catch (error) {
     return {
