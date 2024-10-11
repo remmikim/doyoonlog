@@ -34,7 +34,7 @@ export async function getStaticProps({ params: { slug } }: any) {
   } catch (error) {
     return {
       props: {},
-      revalidate: 30,
+      revalidate: 3600,
     }
   }
 }
